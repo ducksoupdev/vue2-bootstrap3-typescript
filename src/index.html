@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vuejs 2 Bootstrap 3 Dropdown directive</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .demo-buttons > div {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Vuejs 2 Bootstrap 3 Dropdown directive</h1>
+    <div id="app">
+        <div class="demo-buttons">
+            <div class="dropdown" v-vue2-bs3-dropdown>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                    Action <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="http://www.google.com" target="_blank">Google</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <div class="dropup" v-vue2-bs3-dropdown>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                    Action <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="http://www.google.com" target="_blank">Google</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../node_modules/vue/dist/vue.js"></script>
+<script src="../dist/js/vue2-bs3-dropdown.js"></script>
+<script>
+    new Vue({
+        el: '#app'
+    });
+</script>
+</body>
+
+</html>
